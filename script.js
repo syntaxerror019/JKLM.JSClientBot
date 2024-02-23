@@ -115,12 +115,11 @@ function main() {
 }
 
 
-window.addEventListener("load", function () {
-  submitButton = document.createElement('input');
-  submitButton.type = 'submit';
-  submitButton.value = 'Submit';
 
-  var form = document.querySelector("form");
-  form.appendChild(submitButton);
-  main();
-});
+submitButton = document.createElement('input');
+submitButton.type = 'submit';
+submitButton.value = 'Submit';
+
+var form = document.querySelector("form");
+form.appendChild(submitButton);
+main();
