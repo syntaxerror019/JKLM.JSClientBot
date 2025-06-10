@@ -46,18 +46,14 @@ const sim = function (id, text, lat, irt) {
   },lat); // wait this long before starting
 };
 
-
-
 function sendResponse(text) {
   var form = document.querySelector("form");
   var wordInput = form.querySelector("input[type='text']");
   wordInput.focus();
   running = true;
   sim(wordInput, text, 5, 15);
-
   //wordInput.value = text;
   //wordInput.dispatchEvent(new Event('input', { bubbles: true }));
-
 }
 
 function getWord() {
@@ -76,8 +72,6 @@ function getWord() {
       sendResponse(word);
   }
 }
-
-
 
 function main() {
   const script = document.createElement('script');
